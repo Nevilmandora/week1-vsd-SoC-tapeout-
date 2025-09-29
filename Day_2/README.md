@@ -156,7 +156,7 @@ This file is opened using below command,
 
 ## Summary:
 
-In This day 2 i understand .lib file, i got an overview about different types of coding styles in the design perspective and also learn about optimizations that how the synthesizer optimize the logic and give the final netlist of design. and got idea about flattend and hierarchical synthesis and importance of sunmodule synthesis.  
+* In This day 2 i understand .lib file, i got an overview about different types of coding styles in the design perspective and also learn about optimizations that how the synthesizer optimize the logic and give the final netlist of design. and got idea about flattend and hierarchical synthesis and importance of submodule synthesis.  
 
     
  
