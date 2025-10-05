@@ -67,8 +67,9 @@ This file is opened using below command,
 
   * So the synthesis tool will convert above design into gates as represent below:
  
-    
-![WhatsApp Image 2025-10-05 at 5 28 50 PM](https://github.com/user-attachments/assets/d272bb2b-b897-4d8b-9e0e-c3f45a4751e0)
+    ![WhatsApp Image 2025-10-05 at 6 51 21 PM](https://github.com/user-attachments/assets/8b1d9c7b-5ecd-4c7a-b28b-4116844f90bf)
+
+
 
 * you can also verify this by synthesis of this design using yosys.
 
