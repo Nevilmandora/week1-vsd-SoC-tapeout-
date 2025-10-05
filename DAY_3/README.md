@@ -70,6 +70,37 @@
 
 * Advanced: (i) state optimization,  (ii) Retiming,  (iii) Sequencial logic Clonning
 
+## Sequencial Constant propagation:
+
+* This is the basic technique as we show for cominational , sequencial constant propagation is also one method for optimization.
+
+
+![WhatsApp Image 2025-10-05 at 6 10 43 PM](https://github.com/user-attachments/assets/641dbaa9-5426-432c-9297-32d5aae4a7cc)
+
+* As shown in above image, when D input is permenantly connected to zero then, output y will always be 1.
+
+
+  ### Here we are taking one counter example for understanding sequencial optimiation.
+
+       module counter_opt(input clk, input reset, output q);
+       reg[2:0] count;
+       assign q = count[0];
+       always@(posedge clk, posedge reset)
+       begin
+       if(reset)
+              count <= 3'b000;
+       else
+              count <= count + 1;
+       end
+       endmodule
+
+  ![WhatsApp Image 2025-10-05 at 6 37 04 PM](https://github.com/user-attachments/assets/2d7b1870-cc7d-4014-bb00-c6e6024dfbd3)
+
+  * So here as shown in example, the output of the counter only depends on the count[0], so count[2] & count[1] are not used or we can say that output is not dependent on them. so here in this case optimization will done as shown in image that invert of the q will be given to d input. So that this way the optimization of sequential designs are done.
+ 
+  * Also you can check it using synthesis , it that it will implement the design this way only.
+
+
 
 ### 1) State Optimization:
 
@@ -89,4 +120,3 @@
 
 * Clonning Duplicates registers to reduce the fan-out and net delay, improving performance.
 
-  
