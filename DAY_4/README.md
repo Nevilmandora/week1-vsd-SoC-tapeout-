@@ -93,6 +93,29 @@
 * Employ always @* for combinational logic to avoid sensitivity list errors.
 
 
+
+## If and Case Statements :
+
+* if statements are used when priority matters, means when we need priority logic in our design then we can use if statements.
+ 
+* Case Statements is used when we want to check multiple conditions. it create mux same as conditions that need to be checked. for ex. 4 conditions needs to be checked then it creates 4 muxes line by line.
+ 
+* **incomplete if** statement is bad coding style. incomplete if inferred latches. it creates combinational loops. So when you use if statement then not keep if incomplete, means always use else block with if. never put the if statement incomplete.
+ 
+  * in Case statement also use always default case statement , means always put default condition in case statement to avoid inferred latches.
+ 
+
+## Looping Constructs :
+
+* In looping constructs two looping constructs are available , for loop and generate for loop.
+
+* for loop is used inside always block in verilog.
+
+* generate for loop is always used outside for always block.
+
+
+
+
  
 
 
