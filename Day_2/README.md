@@ -51,7 +51,32 @@ This file is opened using below command,
   So that whenever we have larger design or we have multiple instances of modules, in that case we should go for flattend or submodule synthesis so that tool can perfectly done its work.
 
 
+## Good mux example :
 
+* Here we can see that how the synthesis tool convert the multiplexer design to the gate level netlist.
+
+       module good_mux(input i0, input i1, input sel, output reg y);
+       always@(*)
+       begin
+            if(sel)
+               y<=i1;
+            else
+               y<=i0;
+       end
+       endmodule
+
+  * So the synthesis tool will convert above design into gates as represent below:
+ 
+    
+![WhatsApp Image 2025-10-05 at 5 28 50 PM](https://github.com/user-attachments/assets/d272bb2b-b897-4d8b-9e0e-c3f45a4751e0)
+
+* you can also verify this by synthesis of this design using yosys.
+
+
+![WhatsApp Image 2025-10-05 at 5 32 33 PM](https://github.com/user-attachments/assets/ea4efbb7-7598-490e-8ec7-30e775889350)
+
+  
+     
 ## 3) Flip flop coding styles:
 
 * Normally flip flops are used for removing glitches from the circuits by using flip flop. so flip flop stores data and then passes to that data to the next circuit effectively without any glitch.
