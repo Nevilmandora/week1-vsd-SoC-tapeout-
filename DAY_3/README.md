@@ -31,6 +31,17 @@
 
 * It saves unnecessary gates and reduces delay.
 
+* Here i have one example that how the constant propagation is done in optimization.
+
+
+![WhatsApp Image 2025-10-05 at 5 45 27 PM](https://github.com/user-attachments/assets/0b00c91e-2749-4ca0-802c-a2b7f9a2b6d9)
+
+* In this example in the boolean expression if we take A=0, then equation simplifies into c'. so this way the tool convert this type of logic optimization using constant propagation method. and before optimization it takes 6 MOS transistors and after optimization it takes only 2 MOS transistors.
+
+* So by this example, we can understand how the optimization is done by the tool.
+
+
+
 
 ### 2) Boolean Logic Optimization:
 
@@ -40,6 +51,11 @@
 
 *  uses k-map, Mckluskey, etc..
 
+* Here i have one example for boolean logic optimization as shown below.
+
+![WhatsApp Image 2025-10-05 at 5 54 42 PM](https://github.com/user-attachments/assets/34548d43-a3a2-4c6b-b79a-430f64579321)
+
+* So as shown in this example big boolean equation can be optimize in small equation. So the tool will convert this type of boolean equations into optimized format.
 
 ### 3) Squeezing the design:
 
